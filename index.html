@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="outer">
+        <div class="inner " data-tilt>
+            <div class="d-flex gap-3 mt-3">
+                <i class="fa-solid fa-stopwatch fs-1"></i>
+                <h2>Stop Watch</h2>
+            </div>
+            <div class="time ">
+                <p id="m">00</p>
+                <p class="mx-1">: </p>
+                <p id="s" >00</p>
+                <p class="mx-1">:</p>
+                <p id="ms" class="ms">00</p>
+            </div>
+            <div class="btns">
+
+                <button id="start" class="start d-block text-white">
+                    <i class="fa-solid fa-play"></i>
+                                       </button>
+                <button id="stop1" class="start d-none text-white" >
+                    <i class="fa-solid fa-pause"></i>
+                    
+                </button>
+                <button id="reset" class="restart text-white">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </button>
+                <button id="restart" class="restart text-white">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                </button>
+            </div>
+        </div>
+        <div id="labDiv" class=" flex justify-content-center align-items-lg-center mx-auto w-100" >
+        </div>
+    </section>
+    <script src="vanilla-tilt.js"></script>
+    <script src="code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

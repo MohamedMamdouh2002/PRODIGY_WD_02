@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+ background: linear-gradient(45deg ,#fff,#ffeaea,#7462ff,rgb(142, 53, 75),#23d5ab, #09c ,#000);
+ background-size: 300% 300%;
+ animation: color 12s ease-in-out infinite;
+
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+@keyframes color {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position:100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.outer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // height: 100vh;
+    margin-top: 100px;
+
+.inner{
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 400px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex ;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    .time{
+        width: 180px;
+        height: 180px;
+        border: 2px solid black;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        color: #000;
+}
+.btns{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        .start{
+            background-color: #000;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+    
+        }
+        .restart{
+            background-color: #000;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+    
+        }
+    }
+}
+
+.labDiv{
+    color: #000;
+    background-color: #fff;
+}
+}
+@media (max-width:450px) {
+    .outer{
+
+        .inner{
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    width: 280px;
+    height: 350px;
+    border-radius: 10px;
+    display: flex ;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    
+   }
+    
+   
+}
+}
