@@ -37,6 +37,8 @@ reset.addEventListener('click',()=>{
     ms.textContent="00"
     s.textContent="00"
     m.textContent="00"
+    stop1.classList.replace('d-block','d-none')
+    start.classList.replace('d-none','d-block')
     clearInterval(Interval)
     
     })
